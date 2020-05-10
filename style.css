@@ -42,7 +42,7 @@ body{
 
 /* landing page */
 .home-inner{
-    background-image: url("/img/background.jpg");
+    background-image: url("/image/background.jpg");
     /* background: black; */
 }
 .caption{
