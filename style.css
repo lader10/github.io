@@ -1,8 +1,64 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Rambla|Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
 
 body{
     margin: 0;
     padding: 0;
+    /* color: #505962; */
+    color: white;
+    background: #007bff!important;
+     /* background: rgba(0,0,0,0.6) !important; */
+    
+    /*  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)); */
+}
+
+/* navigation */
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    /* background: rgba(0,0,0,0.6) !important; */
+}
+
+.navbar-brand img{
+    height: 1rem;
+}
+.navbar-nav li{
+    padding-right: .7rem;
+
+}
+
+.navbar-dark.navbar-nav .nav-link{
+    color:blue;
+    padding: .8rem;
+
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: red;
+}
+
+/* landing page */
+.home-inner{
+    background-image: url("/image/background.jpg");
+    /* background: black; */
+}
+.caption{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    color: gold;
+    
+}
+.btn-lg{
+    border-width: medium;
+    border-radius: 0;
+    padding: .6rem 1.3rem;
+   background: gold;
 }
 
 :root{
@@ -12,9 +68,13 @@ body{
     --font-staat: 'Staatliches', cursive;
     --font-os:  'Oswald', sans-serif;
     --font-ram: 'Rambla', sans-serif;
+    --font-yes:  'Yesteryear', cursive;
 }
 
 /* global classes */
+.font-yes{
+     font: normal 400 50px var(--font-yes);
+}
 .font-staat{
     font: normal 400 18px var(--font-staat);
 }
@@ -41,102 +101,276 @@ body{
     font-size: 16px;
 }
 
-.bgcolor-black{
-    background-color: var(--color-black);
+
+    .offset::before{
+    display: block;
+    content:"" ;
+    height: 4rem;
+    margin-top: -4rem;
+          background: #007bff!important;
 }
 
-/* #global classes */
+  
 
-#header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index:99999;
-    transition: left .5s ease;
+
+
+/*============= COURSE SECTION =============*/
+
+.narrow{
+        background: #007bff!important;
 }
 
-#header nav{
-    height: 100vh;
-}
-#header .site-title .navbar-brand{
-    letter-spacing: 2px;
-    color: var(--color-white);
-}
+.imgproj{
 
-#header .nav-link{
-    margin: .7rem 1rem;
-    border-bottom: 1px solid var(--color-border);
-    text-transform: uppercase;
+  border: .5px solid #ddd;
+  
+  padding: 5px;
+  width: 600;
+  height: 400 ;
 }
 
-#header .nav-link:hover{
-    color: var(--color-white) !important;
+
+services-img{
+   border: .5px solid #ddd;
+    height: auto;
+  width: 100%; 
 }
 
-#header .toggle-button{
-    background: none;
-    color: var(--color-black);
-    position: fixed;
-    top: 25px;
-    right: 20px;
-    border: 1px solid var(--color-border);
+.narrow h1{
+    font-size: 1.2rem;
+
 }
-
-.toggle-left{
-    left: 0 !important;
-    width: 1000px !important;
-}
-
-/* site-main */
-
-.site-banner .banner-area{
-    /* background: url(.author-img) no-repeat; */
-    background: url("./image/background.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
-
-.site-banner .banner-area .author{
-    margin: 0;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.site-banner .banner-area .author .author-img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: auto;
-    background: url(./assets/about.jpg) no-repeat;
-    background-size: 200%;
-    background-position: 40% 0;
-}
-
-.skill .bars p, .site-content .skill .bars span{
-    line-height: 10px;
-}
-
-#footer form .row .col input[type="text"],
-#footer form .row .col input[type="email"],
-#footer form textarea{
-    border: none;
+.btn-secondary{
+    border-width: medium;
     border-radius: 0;
-    border-bottom: 1px solid gray;
-    padding: 1.5rem 1rem;
+    text-transform: uppercase;
+    font-size: 1.2 rem;
+    padding: .6rem,1.2 rem;
+    margin: 1rem;
+    color: white;
+    background-color: #1ebba3;
+    border-color: #1ebba3;
 }
 
-@media screen and (min-width: 768px){
-    .toggle-button{
-        display: none;
-    }
-    #header{
-        z-index:0;
-    }
+.btn-secondary:hover{
+    
+    background-color: #189582;
+    border-color: #189582;
 }
 
-/* #site-main */
+/* features section */
+
+.feature img{
+    width: 100%;
+
+}
+
+.employee img{
+     border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 5px;
+  width: 150px;
+}
+.jumbotron{
+   background: #007bff!important;
+   margin: 0;
+    padding: 8rem 0 3.5rem;
+    border-radius: 0;
+}
+
+h3.heading{
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+}
+
+.heading-underline{
+        width: 7rem;
+        height: .2rem;
+        background-color:white;
+        margin: 0 auto 2rem;
+
+
+}
+
+/* .feature svg.svg-inline{
+    color: gold;
+} */
+
+.desc  h3{
+    font-size: 1.5rem;
+    /* text-transform: uppercase; */
+    /* padding-bottom: .4rem; */
+}
+
+.desc li{
+    text-align: justify;
+    font-size:1rem ;
+}
+
+.desc p{
+    color: white;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* resourse section */
+.fixed{
+    background-image:url(/img/apple.png);
+    z-index: -1;
+
+}
+.dark{
+    background-color: gold;
+}
+
+.fixed-background{
+    margin-bottom: 1rem;
+}
+.fixed-background h3{
+    margin-bottom: 1rem;
+}
+
+.fixed-background p{
+    margin-top: 1rem;
+    }
+
+/* about section */
+.clients img{
+    width: 100%;
+    border-radius: 50%;
+}
+blockquote .svg-inline--fa{
+    color: red;
+    margin: 1rem;
+}
+
+/* .clients-hr{
+        border-top: ;
+} */
+/* 
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 60vh;
+  /* background: url("/image/background.jpg") top center; */
+  background-size: cover;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(5, 13, 24, 0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#hero .hero-container {
+  position: relative;
+  z-index: 2;
+  min-width: 300px;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#hero p {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero p span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #149ddd;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+} */
+
+/* service section */
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
