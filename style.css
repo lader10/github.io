@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Rambla|Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" );
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&family=Righteous&display=swap");
 
 body{
     margin: 0;
@@ -16,22 +14,22 @@ body{
     --color-black: #000000;
     --color-white: #ffffff;
     --color-border: #ffffff34;
-    --font-staat: 'Staatliches', cursive;
-    --font-os:  'Oswald', sans-serif;
-    --font-ram: 'Rambla', sans-serif;
-    --font-yes:  'Yesteryear', cursive;
+    --font-indie: 'Indie Flower', cursive;
+    --font-right:  'Righteous', cursive;
+
+ 
     --font-perma:'Permanent Marker', cursive;
 }
 
 /* global classes */
 .font-perma{
-     font: normal 400 50px var(--font-yes);
+     font: normal 400 50px var(--font-perma);
 }
-.font-yes{
-     font: normal 400 50px var(--font-yes);
+.font-indie{
+     font: normal 400 25px var(--font-indie);
 }
-.font-staat{
-    font: normal 400 18px var(--font-staat);
+.font-right{
+    font: normal 400 30px var(--font-right);
 }
 .font-os{
     font: normal 300 18px var(--font-os);
@@ -93,11 +91,34 @@ body{
   
 } */
 
+
 #laderhome {
   width: 100%;
   height: 100vh;
   background-size: cover;
+    /* background: linear-gradient(-45deg, #ee7752,lightpink, #e73c7e);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite; */
 }
+
+/* body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+} */
+
+/* @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
 
 
     .offset::before{
@@ -132,27 +153,24 @@ body{
 .aboutme img{
 
    border: .5px solid #ddd;
-    height: auto;
-  width: 100%; 
+    height: 600px;
+  width: 100%;
+   padding: 1px;
+  margin: 2px;
+   display: block;
+  margin-left: auto;
+  margin-right: auto; 
 }
 
 .skills {
-  width: 200px;
-  height: 100px;
-  display: inline-box;
-  background:gray;
-  font-size: large;
-  color :white;
-  margin: 15px;
+  width: 100%;
+ 
 
-  /*  width: 100px;
-	    height: 100px;
-	    display: inline-block;
-	    font-size: large;
-	    background: maroon;
-	    color: thistle;
-	    margin: 15px;
-    transition: all 1s; */
+
+  font-size: large;
+ 
+  margin: 1px;
+
 }
     .center {
   position: absolute;
@@ -204,17 +222,24 @@ body{
       background: inherit;
       border-radius: 5% / 50%;
     } */
-div.gallery {
+/* div.gallery {
   border: 1px solid #ccc;
 }
 
 div.gallery:hover {
   border: 1px solid #777;
-}
+} */
 
 div.gallery img {
-  width: 100%;
-  height: auto;
+  width: 120px;
+  height: 100px;
+  padding: 1px;
+  margin: 2px;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+
 }
 
 div.desc {
@@ -241,3 +266,153 @@ div.desc {
   }
 }
 
+.site-footer {
+  background-color: #fff;
+  color: #000;
+}
+
+.site-footer a {
+  color: #000;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+/* .small{
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  /* bottom: -100px; 
+} */
+
+.medium{
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  /* bottom: -200px; */
+}
+
+.large{
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  /* bottom: -300px; */
+}
+
+.xlarge{
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  /* bottom: -400px; */
+}
+
+.xxlarge{
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  /* bottom: -500px; */
+}
+
+.shade1{
+  opacity: 0.1;
+}
+.shade2{
+  opacity: 0.14;
+}
+
+.shade3{
+  opacity: 0.17;
+}
+
+.shade4{
+  opacity: 0.18;
+}
+
+/* .shade5{
+  opacity: 0.9;
+} */
+
+@keyframes ripple{
+  0%{
+    transform: scale(0.8);
+  }
+  
+  50%{
+    transform: scale(1.2);
+  }
+  
+  100%{
+    transform: scale(0.8);
+  }
+}
