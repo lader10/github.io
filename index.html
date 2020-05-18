@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
   <title>lader10</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
@@ -17,7 +18,7 @@
   <div id="home">
     
     <!-- start of navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom  fixed-top">
      <p>logo</p>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
@@ -77,7 +78,7 @@
         <div class="col-md-4">
             
           <div class="aboutme">
-            <img src="/image/pexels-photo-laptop.jpeg" alt="">
+            <img src="/image/New folder/lader pic.jpg" alt="">
           </div>
       
         </div>
@@ -88,7 +89,34 @@
             
             </div>
           
-            <p class="font-right font-size-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic alias dolor dolore optio delectus suscipit ut ex eligendi dolorum veritatis qui accusamus corrupti distinctio, magnam quae porro autem accusantium, in quo? Sed, ratione doloribus? Dicta possimus asperiores fuga quaerat excepturi nostrum rem ea quasi eligendi, quibusdam quas veritatis est?</p><br><br>
+            <p class="font-right font-size-20">Thanks for dropping by. My name is Regina Derla aka Lader. I am a Software Engineer with 7 years of experience working in IT Companies. I specialized in using Javaa nd Jvacript  as my programming language for building Web applications. </p><br>
+            <p class="font-right font-size-20">I always love to learn new skills. I took a lot of crash courses in Web development to enhance my skills and learn new technologies that will help boost my development personally and career-wisely.</p><br>
+                <p class="font-right font-size-20">I would love to do work that engage in Web development as I plan to work as a
+                  freelancer. If you like to view my work, please visit my <a href="#projects">projects </a>built in the latest
+                  technologies</p><br>
+                      <div class="col-md-12 text-center">
+                      
+                        <address>
+                          <br><br>
+                          <i class="fa  fa fa-phone-square" style="font-size:27px"></i>
+                          <a href="tel:+639176244410">+(63) 9957109386
+                          </a> <br>
+                          <i class="fa fa-envelope" style="font-size:24px"></i><a href="mailto:dcs_inc@yahoo.com">
+                            reginaderla@yahoo.com.ph</a><br><br>
+                      
+                          <div class="social font-size-27">
+                            <span class="mr-3"><a href="">
+                                <i class="fab fa-linkedin"></i></a></span>
+                            <span class="mr-3"><a href="">
+                                <i class="fab fa-github"></i></a></span>
+                            <span class="mr-3"><a href="">
+                                <i class="fab fa-instagram"></i></a></span>
+                      
+                      
+                      
+                          </div>
+                      
+                      </div>
           </div>
         </div>
       </div>
@@ -393,22 +421,23 @@
         <h3 class="heading font-perma">contact</h3>
       
       </div>
-<div class="container font-indie">
-  <form action="/action_page.php">
+<div  class="container font-indie">
+  <!-- <form action="contact.php" method="POST" role="form"  enctype="multipart/form-data">
     <div class="row ">
       <div class="col-25">
-        <label for="fname">Name</label>
+        <label for="name">Name</label>
       </div>
       <div class="col-75">
-        <input type="text" id="name" name="name" placeholder="Your name..">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"/>
+     
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="lname">Email</label>
+        <label for="email">Email</label>
       </div>
       <div class="col-75">
-        <input type="text" id="email" name="ename" placeholder="Your email..">
+    <input type="email" class="form-control" name="email" id="email"  placeholder="Email" />
       </div>
     </div>
    
@@ -417,13 +446,89 @@
         <label for="message">Message</label>
       </div>
       <div class="col-75">
-        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+        <textarea class="form-control" name="message" rows="10" placeholder="Message"></textarea>
+      </div>
+    </div>
+   
+    <div class="row">
+    <div class="text-center"><button type="submit">Send Message</button></div>
+    </div>
+  </form> -->
+
+
+<form method="post" action="contact.php" role="form">
+
+  <div class="messages"></div>
+
+  <div class="controls">
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="form_name">Firstname *</label>
+          <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *"
+            required="required" data-error="Firstname is required.">
+          <div class="help-block with-errors"></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="form_lastname">Lastname *</label>
+          <input id="form_lastname" type="text" name="surname" class="form-control"
+            placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+          <div class="help-block with-errors"></div>
+        </div>
       </div>
     </div>
     <div class="row">
-      <input type="submit" value="Submit">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="form_email">Email *</label>
+          <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *"
+            required="required" data-error="Valid email is required.">
+          <div class="help-block with-errors"></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="form_need">Please specify your need *</label>
+          <select id="form_need" name="need" class="form-control" required="required"
+            data-error="Please specify your need.">
+            <option value=""></option>
+            <option value="Request quotation">Request quotation</option>
+            <option value="Request order status">Request order status</option>
+            <option value="Request copy of an invoice">Request copy of an invoice</option>
+            <option value="Other">Other</option>
+          </select>
+          <div class="help-block with-errors"></div>
+        </div>
+      </div>
     </div>
-  </form>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="form_message">Message *</label>
+          <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4"
+            required="required" data-error="Please, leave us a message."></textarea>
+          <div class="help-block with-errors"></div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <input type="submit" class="btn btn-success " name="btn-send" value="Send message">
+      </div>
+    </div>
+    <!-- <div class="row">
+      <div class="col-md-12">
+        <p class="text-muted">
+          <strong>*</strong> These fields are required. Contact form template by
+          <a href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form"
+            target="_blank">Bootstrapious</a>.</p>
+      </div>
+    </div> -->
+  </div>
+
+</form>
+
 </div>
       <div class="col-md-12 text-center">
         
@@ -455,7 +560,7 @@
       <div class="col-md-6 text-center">
         <div class="footer1"><br><br>
           <p class="text-center text-md-left">© 2020 Copyright:
-            <a href="#">
+            <a href="www.lader10.com">
               <strong> Lader10</strong>
             </a>
           </p>
@@ -485,10 +590,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
       integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
 
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
+        integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+
     <script></script>
     <script src="/vendor/typed/typed.min.js"></script>
 
     <script src="/main.js"></script>
+    <script src="/contact.js"></script>
     <!--- End of Script Source Files -->
 </body>
 
